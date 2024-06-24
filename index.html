@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASM</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f5e6;
+            color: #333;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .header nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .main {
+            background: url('bg2.jpg') no-repeat center center/cover;
+            padding: 100px 20px;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .main::after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: -50px;
+            left: 0;
+            right: 0;
+            height: 50px;
+            background: #f8f5e6;
+            border-top-left-radius: 50% 20%;
+            border-top-right-radius: 50% 20%;
+        }
+
+        .main h1 {
+            font-size: 48px;
+            margin: 0 0 20px;
+            color: yellow;
+        }
+
+        .main p {
+            font-size: 18px;
+            margin: 0 0 40px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .buttons a {
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #ff9800;
+            border-radius: 5px;
+        }
+
+        .partners {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .partners h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .partners .logos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .partners .logos img {
+            height: 50px;
+        }
+
+        #footer {
+            background-color: #003366;
+            /* Dark blue background */
+            color: white;
+            /* White text color */
+            padding: 20px;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            /* For better responsiveness on small screens */
+        }
+
+        #footer address {
+            font-style: normal;
+            line-height: 1.5;
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        #footer iframe {
+            flex: 1;
+            max-width: 600px;
+            height: 450px;
+            border: 0;
+            margin-top: 20px;
+            /* Adjust if needed */
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">ASM SOLAR SOLUTIONS</div>
+        <nav>
+            <a href="https://www.facebook.com/profile.php?id=100072097808214"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" <i class="fa-brands fa-whatsapp"></i></a>
+
+        </nav>
+    </header>
+
+    <main class="main">
+        <h1>Go Green <span>Save Energy</span><span>Save Money</span></h1>
+        <p>SOLAR UPS | SOLAR STREET LIGHTS | SOLAR AGRICULTURE PUMPS | SOLAR C-10 BATTERIES</p>
+        <div class="buttons">
+            <a href="#">Book Now For Free Estimates</a>
+        </div>
+    </main>
+
+    <section class="partners">
+        <h2>Our Partners</h2>
+        <div class="logos">
+            <img src="D:\landingpage\microtekofficial_logo.jpg" alt="Microtek">
+            <img src="D:\landingpage\okaya.png" alt="Okaya">
+
+            <img src="D:\landingpage\lflogo.png" alt="Livfast">
+            <img src="D:\landingpage\light-solar-logo-e11ed5.svg" alt="Livguard">
+            <img src="D:\landingpage\logo-jpg-hi-resolution.jpg" alt="Skyscanner">
+        </div>
+    </section>
+    <div id="footer">
+        <div class="footer-container">
+            <address>
+                <strong>Office Address:</strong><br>
+                ASM Solar Solutions<br>
+                M. Arumugam<br>
+                Vickramasingapuram<br>
+                Tirunelveli District<br>
+                Tamil Nadu
+            </address>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3943.7644927416045!2d77.3881!3d8.7139!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b043a1d4bcc7e75%3A0xb59b00c44280d537!2s371%2C%20Main%20Rd%2C%20Vickramasingapuram%2C%20Tamil%20Nadu%20627425!5e0!3m2!1sen!2sin!4v1719210914079!5m2!1sen!2sin"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
